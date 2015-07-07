@@ -1,0 +1,19 @@
+{
+  "name": "tutorialLand",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "i40": "^1.3.1",
+    "mime": "^1.3.4",
+    "monk": "^1.0.1",
+    "mustache": "^2.1.2",
+    "qs": "^4.0.0"
+  }
+}
