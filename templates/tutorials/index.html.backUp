@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/public/style.css"/>
+    <title>TUTORIAL LAND</title>
+</head>
+<body>
+
+<nav class="nav" role="navigation">
+    <ul class="ul1">
+        <li class="tutorialNav"><h3 class="a">TUTORIAL LAND</h3></li>
+    </ul>
+</nav>
+
+<div class="div1">
+    <p class="p1">
+        DESCRIPTION OF HOW THE SITE WORKS
+    </p>
+</div>
+
+<div class="div2">
+
+    <form action="/" method="post">
+        <div class="topicDiv">
+            <label for="topic">Topic
+
+                <input type="text" name='topic' id="topic"/>
+            </label>
+        </div>
+        <div class="linkDiv">
+            <label for="link">Link
+
+                <input type="text" name='link' id="link"/>
+            </label>
+        </div>
+        <div class="descriptionDiv">
+            <label for="description">Description
+
+                <input type="text" name='description' id="description"/>
+            </label>
+        </div>
+        <div class="tagsDiv">
+            <label for="tags">Tags
+
+                <input type="text" name='tags' id="tags"/>
+            </label>
+        </div>
+        <input type="submit" value="ADD TUTORIAL"/>
+    </form>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <td class="tags">NAME</td>
+        <td class="topic">TOPIC</td>
+        <td class="link">LINK</td>
+        <td class="description">DESCRIPTION</td>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    {{#tutorials}}
+
+
+
+        <tr>
+            <td class="tutorial">{{name}}</td>
+            <td class="tutorial">{{topic}}</td>
+            <td class="tutorial"><a href='{{link}}'>{{link}}</a></td>
+            <td class="tutorial">{{description}}</td>
+            <td class="tutorial">
+                <form action="/tutorials/{{_id}}/delete" method="post">
+                    <input type="submit" value="DELETE" class="delete2"/>
+                </form>
+            </td>
+            <td class="tutorial">
+                <a href="/tutorials/{{_id}}/edit">EDIT</a>
+            </td>
+
+
+        </tr>
+
+
+    {{/tutorials}}
+    </tbody>
+</table>
+</body>
+</html>

@@ -21,6 +21,7 @@ routes.addRoute('/', function(req,res,url){
         });
         req.on('end', function () {
             var tutorial = qs.parse(result);
+            tutorial.tags = tutorial.tags.split(',');
             tutorials.insert(tutorial, function (err, doc) {
                 if (err) {
                     res.end('ERROR!!!!!!!!UZHASNO!');
@@ -29,6 +30,17 @@ routes.addRoute('/', function(req,res,url){
                 res.end();
 
             })
+        })
+    }
+});
+
+routes.addRoute('/tutorials/:id', function (req, res, url) {
+    url = url.params.id;
+    if (req.method === 'GET'){
+        res.setHeader('Content-Type', 'text/html');
+        tutorials.findOne({_id: url}, function (err, docs) {
+            var template = view.render('/tutorials/show', docs);
+            res.end(template);
         })
     }
 });
