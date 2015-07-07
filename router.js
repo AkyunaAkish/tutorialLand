@@ -15,8 +15,11 @@ routes.addRoute('/', function (req, res, url) {
         console.log('STRING');
         console.log(qs.parse(ur.parse(req.url).query));
         var obj = {};
+
         if (ur.parse(req.url).query) {
-            obj = {tags: {$in: [ur.parse(req.url).query]}}
+            var search = qs.parse(ur.parse(req.url).query).search.toLowerCase();
+            var re = new RegExp(search, "g");
+            obj = {tags: {$in: [re]}}
         }
 
         tutorials.find(obj, function (err, docs) {
@@ -31,6 +34,7 @@ routes.addRoute('/', function (req, res, url) {
         });
         req.on('end', function () {
             var tutorial = qs.parse(result);
+            tutorial.tags = tutorial.tags.toLowerCase();
             tutorials.insert(tutorial, function (err, doc) {
                 if (err) {
                     res.end('ERROR!!!!!!!!UZHASNO!');
@@ -59,6 +63,11 @@ routes.addRoute('/tutorials/:id', function (req, res, url) {
         res.setHeader('Content-Type', 'text/html');
         tutorials.findOne({_id: url}, function (err, docs) {
             docs.content = markdown.toHTML(docs.content);
+            var tagsString = '';
+            docs.tags.split(', ').forEach(function(el){
+                tagsString += '<a href="/?search=' + el + '">' + el + '</a> '
+            });
+            docs.tags = tagsString
             var template = view.render('/tutorials/show', docs);
             res.end(template);
         })
@@ -105,6 +114,7 @@ routes.addRoute('/tutorials/:id/update', function (req, res, url) {
 
     req.on('end', function () {
         var tutorial = qs.parse(data);
+        tutorial.tags = tutorial.tags.toLowerCase();
         tutorials.updateById(url.params.id, tutorial, function (err, doc) {
             res.writeHead(302, {'Location': '/'});
             res.end();

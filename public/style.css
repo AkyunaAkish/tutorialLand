@@ -1,6 +1,4 @@
-body{
-    background:grey;
-}
+
 .nav {
     border: 1px solid cyan;
 }
@@ -20,19 +18,13 @@ body{
 }
 
 .nav {
-    background: rgb(40,68,155	);
+    background: rgb(40, 68, 155);
 }
 
 li.tutorialNav {
     text-align: center;
     list-style-type: none;
 }
-
-
-
-
-
-
 
 .nav2 {
     border: 1px solid cyan;
@@ -43,7 +35,7 @@ li.tutorialNav {
 }
 
 .nav2 .b {
-    color: rgb(40,68,155);
+    color: rgb(40, 68, 155);
     text-decoration: none;
     text-align: right;
 
@@ -54,7 +46,8 @@ li.tutorialNav {
 }
 
 .nav2 {
-    background: rgb(40,68,155);
+    background: rgb(40, 68, 155);
+
 }
 
 li.tutorialNav2 {
@@ -62,8 +55,179 @@ li.tutorialNav2 {
     list-style-type: none;
 }
 
-
-.navBarDiv{
+.navBarDiv {
     position: relative;
     left: 38%;
+}
+
+.name {
+    width: 20%;
+    padding: 5px;
+    font-weight: 600;
+
+}
+
+.topic {
+    width: 10%;
+    padding: 5px;
+    font-weight: 600;
+
+}
+
+.link {
+    width: 30%;
+    padding: 5px;
+    font-weight: 600;
+
+}
+
+.actions {
+    width: 10%:
+}
+
+.description {
+    width: 30%;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.navDivLeft {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.navSearch {
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+
+.content {
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+a button {
+    color: black;
+}
+
+.showName {
+    float: left;
+    width: 33.333%;
+}
+
+.showTopic {
+    float: left;
+    width: 33.333%;
+}
+
+.showContent {
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+
+}
+
+.editContent{
+    margin-top: 10px;
+    float: left;
+}
+
+.renderContent {
+    margin-top: 10px;
+    border: 1px solid lightblue;
+}
+
+.showLink {
+    margin-top: 10px;
+}
+
+.showTags {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: right;
+    margin-right: 95px;
+}
+
+.saveChanges{
+    float: right;
+    margin-right: 95px;
+}
+.tutorial {
+    padding: 5px;
+}
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+        text-align: left;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid #e0e0e0;
+    }
+
+    td.ratings {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #dfdfdf;
+        position: relative;
+        padding-left: 30%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 25%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "NAME";
+    }
+
+    td:nth-of-type(2):before {
+        content: "TOPIC";
+    }
+
+    td:nth-of-type(3):before {
+        content: "LINK";
+    }
+
+    td:nth-of-type(4):before {
+        content: "DESCRIPTION";
+    }
+
+    td:nth-of-type(5) {
+        border: none
+    }
+
+    td:nth-of-type(6):before {
+        content: " ";
+    }
 }

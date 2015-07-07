@@ -7,10 +7,50 @@
     <title>Document</title>
 </head>
 <body>
-{{name}}
-{{topic}}
-{{description}}
-{{{content}}}
-{{tags}}
+
+<nav class="nav" role="navigation">
+    <ul class="ul1">
+        <li class="tutorialNav"><h3 class="a"><a href="/" class="a">Tutorial Land</a></h3></li>
+    </ul>
+    <ul>
+        <li class="tutorialNav">
+            <h5 class="a"><a href="/" class="a">A New Land of User Submitted Tutorials</a></h5>
+        </li>
+    </ul>
+</nav>
+
+<nav role="navigation">
+    <div class="navDivLeft">
+        <a href="/tutorials/new" class="newTut">
+            <button class="newTut">Add Tutorial</button>
+        </a>
+    </div>
+    <div class="navSearch">
+        <form action="/" method="GET">
+            <input type="text" placeholder="Search Tutorials" name="search"/>
+            <button type="submit" value="search" class="b">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="content">
+
+
+        <div class="showName">Name: {{name}}</div>
+
+        <div class="showTopic">Topic: {{topic}}</div>
+
+        <div class="showDescription">Description: {{description}}</div>
+
+        <div class="showLink">Link: <a target="_blank" href="{{link}}">{{link}}</a></div>
+
+        <div class="showContent">Content:<div class="renderContent">{{{content}}}</div></div>
+
+    {{{tags}}}
+
+
+
+</div>
+
 </body>
 </html>

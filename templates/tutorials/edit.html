@@ -7,64 +7,69 @@
     <title>Document</title>
 </head>
 <body>
-<div class="div1">
-    <p class="p1">
-        DESCRIPTION OF HOW THE SITE WORKS
-    </p>
-</div>
 
-<div class="div2">
+<nav class="nav" role="navigation">
+    <ul class="ul1">
+        <li class="tutorialNav"><h3 class="a"><a href="/" class="a">Tutorial Land</a></h3></li>
+    </ul>
+    <ul>
+        <li class="tutorialNav">
+            <h5 class="a"><a href="/" class="a">A New Land of User Submitted Tutorials</a></h5>
+        </li>
+    </ul>
+</nav>
+
+<nav role="navigation">
+    <div class="navDivLeft">
+        <a href="/tutorials/new" class="newTut">
+            <button class="newTut">Add Tutorial</button>
+        </a>
+    </div>
+    <div class="navSearch">
+        <form action="/" method="GET">
+            <input type="text" placeholder="Search Tutorials" name="search"/>
+            <button type="submit" value="search" class="b">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<div class="content">
 
     <form action="/tutorials/{{_id}}/update" method="post">
-        <div class="nameLabel">
-            <label for="name">Name </label>
-        </div>
-        <div class="nameDiv">
 
+        <div class="showName"><label for="name">Name: </label> <input type="text" name='name' id="name"
+                                                                      value="{{name}}"/></div>
 
-            <input type="text" name='name' id="name" value="{{name}}"/>
+        <div class="showTopic"><label for="topic">Topic: </label> <input type="text" name='topic' id="topic"
+                                                                         value="{{topic}}"/></div>
 
-        </div>
-
-        <div class="topicLabel">
-            <label for="topic">Topic </label>
-        </div>
-
-        <div class="topicDiv">
-
-            <input type="text" name='topic' id="topic" value="{{topic}}"/>
+        <div class="showDescription"><label for="description">Description: </label> <input type="text"
+                                                                                           name='description'
+                                                                                           id="description"
+                                                                                           value="{{description}}"/>
         </div>
 
-        <div class="linkLabel">
-            <label for="link">Link </label>
-        </div>
-        <div class="linkDiv">
-            <input type="text" name='link' id="link" value="{{link}}"/>
-        </div>
+        <div class="showLink"><label for="link">Link: </label> <input type="text" name='link' id="link"
+                                                                      value="{{link}}"/></div>
 
-        <div class="descriptionLabel">
-            <label for="description">Description </label>
-        </div>
-        <div class="descriptionDiv">
-            <input type="text" name='description' id="description" value="{{description}}"/>
+        <div class="editContent"><label for="content">Content: </label>
+
+            <div><textarea name="content" id="content" cols="60" rows="10">{{content}}</textarea></div>
         </div>
 
 
-        <div class="contentLabel">
-            <label for="content">Content </label>
-        </div>
-        <div class="contentDiv">
-            <textarea name="content" id="content" cols="30" rows="10">{{name}}</textarea>
-        </div>
+        <div class="showTags">
 
-        <div class="tagsLabel">
-            <label for="tags">Tags </label>
-        </div>
-        <div class="tagsDiv">
-            <input type="text" name='tags' id="tags" value="{{tags}}"/>
-        </div>
+            <label for="tags">Tags: </label>
 
-        <input type="submit" value="SAVE CHANGES"/>
+            <div>
+                <textarea name="tags" id="tags" cols="20" rows="5">{{tags}}</textarea>
+            </div>
+        </div>
+        <div class="saveChanges">
+            <input type="submit" value="Save Changes"/>
+        </div>
     </form>
 </div>
 </body>
