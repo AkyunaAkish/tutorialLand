@@ -5,12 +5,22 @@ var qs = require('qs');
 var tutorials = db.get('tutorials');
 var view = require('./view');
 var mime = require('mime');
+var markdown = require('markdown').markdown;
+var ur = require('url');
 
-routes.addRoute('/', function(req,res,url){
+
+routes.addRoute('/', function (req, res, url) {
     res.setHeader('Content-Type', 'text/html');
     if (req.method === 'GET') {
-        tutorials.find({}, function (err, docs) {
-            var template = view.render('/tutorials/index', {tutorials:docs});
+        console.log('STRING');
+        console.log(qs.parse(ur.parse(req.url).query));
+        var obj = {};
+        if (ur.parse(req.url).query) {
+            obj = {tags: {$in: [ur.parse(req.url).query]}}
+        }
+
+        tutorials.find(obj, function (err, docs) {
+            var template = view.render('/tutorials/index', {tutorials: docs});
             res.end(template);
         })
     }
@@ -21,7 +31,6 @@ routes.addRoute('/', function(req,res,url){
         });
         req.on('end', function () {
             var tutorial = qs.parse(result);
-            tutorial.tags = tutorial.tags.split(',');
             tutorials.insert(tutorial, function (err, doc) {
                 if (err) {
                     res.end('ERROR!!!!!!!!UZHASNO!');
@@ -34,11 +43,22 @@ routes.addRoute('/', function(req,res,url){
     }
 });
 
+routes.addRoute('/tutorials/new', function (req, res, url) {
+    if (req.method === 'GET') {
+        res.setHeader('Content-Type', 'text/html');
+        tutorials.find({}, function (err, docs) {
+            var template = view.render('/tutorials/new', {tutorials: docs});
+            res.end(template);
+        })
+    }
+});
+
 routes.addRoute('/tutorials/:id', function (req, res, url) {
     url = url.params.id;
-    if (req.method === 'GET'){
+    if (req.method === 'GET') {
         res.setHeader('Content-Type', 'text/html');
         tutorials.findOne({_id: url}, function (err, docs) {
+            docs.content = markdown.toHTML(docs.content);
             var template = view.render('/tutorials/show', docs);
             res.end(template);
         })
@@ -77,15 +97,15 @@ routes.addRoute('/tutorials/:id/delete', function (req, res, url) {
     }
 });
 
-routes.addRoute('/tutorials/:id/update', function(req, res , url){
+routes.addRoute('/tutorials/:id/update', function (req, res, url) {
     var data = '';
-    req.on('data', function(chunk){
+    req.on('data', function (chunk) {
         data += chunk;
     });
 
-    req.on('end', function(){
+    req.on('end', function () {
         var tutorial = qs.parse(data);
-        tutorial.update({_id: url.params.id}, {topic: tutorial.topic, link: tutorial.link, description: tutorial.description, tags: tutorial.tags}, function(err,doc){
+        tutorials.updateById(url.params.id, tutorial, function (err, doc) {
             res.writeHead(302, {'Location': '/'});
             res.end();
         })

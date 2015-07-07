@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/public/style.css"/>
+    <link rel="stylesheet" href="/public/normalize.css"/>
+    <title>Document</title>
+</head>
+<body>
+<div class="div1">
+    <p class="p1">
+        DESCRIPTION OF HOW THE SITE WORKS
+    </p>
+</div>
+
+<div class="div2">
+
+    <form action="/tutorials/{{_id}}/update" method="post">
+        <div class="nameLabel">
+            <label for="name">Name </label>
+        </div>
+        <div class="nameDiv">
+
+
+            <input type="text" name='name' id="name" value="{{name}}"/>
+
+        </div>
+
+        <div class="topicLabel">
+            <label for="topic">Topic </label>
+        </div>
+
+        <div class="topicDiv">
+
+            <input type="text" name='topic' id="topic" value="{{topic}}"/>
+        </div>
+
+        <div class="linkLabel">
+            <label for="link">Link </label>
+        </div>
+        <div class="linkDiv">
+            <input type="text" name='link' id="link" value="{{link}}"/>
+        </div>
+
+        <div class="descriptionLabel">
+            <label for="description">Description </label>
+        </div>
+        <div class="descriptionDiv">
+            <input type="text" name='description' id="description" value="{{description}}"/>
+        </div>
+
+
+        <div class="contentLabel">
+            <label for="content">Content </label>
+        </div>
+        <div class="contentDiv">
+            <textarea name="content" id="content" cols="30" rows="10">{{name}}</textarea>
+        </div>
+
+        <div class="tagsLabel">
+            <label for="tags">Tags </label>
+        </div>
+        <div class="tagsDiv">
+            <input type="text" name='tags' id="tags" value="{{tags}}"/>
+        </div>
+
+        <input type="submit" value="SAVE CHANGES"/>
+    </form>
+</div>
+</body>
+</html>

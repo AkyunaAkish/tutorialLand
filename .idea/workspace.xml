@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.30967742">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -41,47 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.backUp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/tutorials/index.html.backUp">
+      <file leaf-file-name="new.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/tutorials/new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1666665">
-              <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-              <folding>
-                <marker date="1436290172000" expanded="true" signature="31:2106" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="38:160" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="167:2098" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="204:312" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="225:305" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="332:409" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="351:402" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="429:1221" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="466:1214" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="497:632" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="529:617" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="662:793" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="693:778" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="830:989" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="868:974" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1019:1150" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1050:1135" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1230:2090" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1242:1432" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1251:1419" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1444:2081" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1479:2047" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1732:1920" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1804:1902" placeholder="..." />
-                <marker date="1436290172000" expanded="true" signature="1954:2031" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/tutorials/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5555556">
-              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -100,8 +64,28 @@
       <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/tutorials/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.5">
+              <caret line="63" column="71" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/tutorials/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.0">
+              <caret line="88" column="64" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/tutorials/show.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -111,7 +95,24 @@
         <entry file="file://$PROJECT_DIR$/public/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+              <folding>
+                <marker date="1436294677000" expanded="true" signature="320:351" placeholder="{...}" />
+                <marker date="1436294677000" expanded="true" signature="358:383" placeholder="{...}" />
+                <marker date="1436294677000" expanded="true" signature="394:475" placeholder="{...}" />
+                <marker date="1436294677000" expanded="true" signature="491:511" placeholder="{...}" />
+                <marker date="1436294677000" expanded="true" signature="519:554" placeholder="{...}" />
+                <marker date="1436294677000" expanded="true" signature="572:626" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.google" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/tutorials/index.html.google">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="58" column="48" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -124,10 +125,13 @@
       <list>
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/view.js" />
-        <option value="$PROJECT_DIR$/public/style.css" />
-        <option value="$PROJECT_DIR$/router.js" />
         <option value="$PROJECT_DIR$/templates/tutorials/index 2.html" />
+        <option value="$PROJECT_DIR$/public/style.css" />
+        <option value="$PROJECT_DIR$/templates/tutorials/new.html" />
         <option value="$PROJECT_DIR$/templates/tutorials/index.html" />
+        <option value="$PROJECT_DIR$/templates/tutorials/show.html" />
+        <option value="$PROJECT_DIR$/templates/tutorials/edit.html" />
+        <option value="$PROJECT_DIR$/router.js" />
       </list>
     </option>
   </component>
@@ -307,7 +311,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08309249" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12283237" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -329,53 +333,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tutorials/index.html.google">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="48" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/tutorials/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/tutorials/index.html.backUp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1666665">
-          <caret line="55" column="29" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
           <folding>
-            <marker date="1436290172000" expanded="true" signature="31:2106" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="38:160" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="167:2098" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="204:312" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="225:305" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="332:409" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="351:402" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="429:1221" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="466:1214" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="497:632" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="529:617" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="662:793" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="693:778" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="830:989" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="868:974" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1019:1150" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1050:1135" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1230:2090" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1242:1432" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1251:1419" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1444:2081" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1479:2047" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1732:1920" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1804:1902" placeholder="..." />
-            <marker date="1436290172000" expanded="true" signature="1954:2031" placeholder="..." />
+            <marker date="1436294677000" expanded="true" signature="320:351" placeholder="{...}" />
+            <marker date="1436294677000" expanded="true" signature="358:383" placeholder="{...}" />
+            <marker date="1436294677000" expanded="true" signature="394:475" placeholder="{...}" />
+            <marker date="1436294677000" expanded="true" signature="491:511" placeholder="{...}" />
+            <marker date="1436294677000" expanded="true" signature="519:554" placeholder="{...}" />
+            <marker date="1436294677000" expanded="true" signature="572:626" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tutorials/new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="70" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -387,26 +380,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router.js">
+    <entry file="file://$PROJECT_DIR$/templates/tutorials/show.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/templates/tutorials/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state vertical-scroll-proportion="-7.5">
+          <caret line="63" column="71" selection-start-line="63" selection-start-column="71" selection-end-line="63" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/tutorials/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5555556">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="88" column="64" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30967742">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
         </state>
       </provider>
